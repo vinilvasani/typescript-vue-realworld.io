@@ -1,0 +1,7 @@
+diff a/src/store/api.ts b/src/store/api.ts	(rejected hunks)
+@@ -9 +9 @@ export function setJWT(jwt: string): void {
+-  conduitApi.defaults.headers.common["Authorization"] = `Token ${jwt}`;
++  conduitApi.defaults.headers.common.Authorization = `Token ${jwt}`;
+@@ -13 +13 @@ export function clearJWT(): void {
+-  delete conduitApi.defaults.headers.common["Authorization"];
++  delete conduitApi.defaults.headers.common.Authorization;
